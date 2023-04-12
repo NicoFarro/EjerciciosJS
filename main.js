@@ -23,12 +23,18 @@ const simpsons =[
     nombre: 'Maggie',
     edad: 2,
     rol: 'Bebe'
+},
+{
+    nombre: 'Ayudante de Santa',
+    edad: 5,
+    rol: 'Perro'
 }
 ]
 
 // const menoresDeEdad = simpsons.filter(simpsons => simpsons.edad < 18);
 // const edadesSumadas = simpsons.reduce((edades, simpson) => edades + simpson.edad, '');
 // const obtenerNombres = simpsons.map(simpson => simpson.nombre);
+
 
 console.log(obtenerNombres);
 
