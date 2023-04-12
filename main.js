@@ -26,5 +26,7 @@ const simpsons =[
 }
 ]
 
-const menoresDeEdad = simpsons.filter(simpsons => simpsons.edad < 18);
-console.log(menoresDeEdad);
+// const menoresDeEdad = simpsons.filter(simpsons => simpsons.edad < 18);
+const edadesSumadas = simpsons.reduce((edades, simpson) => edades + simpson.edad, '');
+console.log(edadesSumadas);
+
