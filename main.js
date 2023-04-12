@@ -34,7 +34,13 @@ const simpsons =[
 // const menoresDeEdad = simpsons.filter(simpsons => simpsons.edad < 18);
 // const edadesSumadas = simpsons.reduce((edades, simpson) => edades + simpson.edad, '');
 // const obtenerNombres = simpsons.map(simpson => simpson.nombre);
+const asignarEstudiantes = simpsons.map(familia => {
+    const {edad, rol} = familia;
+    return {
+        ...familia, //Spread para traerme todos los atributos de simpsons
+        rol: edad < 18 & rol != "Perro" ? "Estudiante" : rol 
+    };
+});
 
-
-console.log(obtenerNombres);
+console.log(asignarEstudiantes);
 
