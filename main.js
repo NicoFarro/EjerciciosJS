@@ -1,7 +1,4 @@
-const familia = {
-    nombre: 'Simpsons',
-    nacionalidad: 'Estados Unidos',
-    miembros: [
+const simpsons =[
 {
     nombre: 'Homero',
     edad: 40,
@@ -28,5 +25,6 @@ const familia = {
     rol: 'Bebe'
 }
 ]
-}
-console.log(familia.miembros);
+
+const menoresDeEdad = simpsons.filter(simpsons => simpsons.edad < 18);
+console.log(menoresDeEdad);
