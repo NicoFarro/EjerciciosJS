@@ -32,15 +32,41 @@ const simpsons =[
 ]
 
 // const menoresDeEdad = simpsons.filter(simpsons => simpsons.edad < 18);
-// const edadesSumadas = simpsons.reduce((edades, simpson) => edades + simpson.edad, '');
-// const obtenerNombres = simpsons.map(simpson => simpson.nombre);
-const asignarEstudiantes = simpsons.map(familia => {
-    const {edad, rol} = familia;
-    return {
-        ...familia, //Spread para traerme todos los atributos de simpsons
-        rol: edad < 18 & rol != "Perro" ? "Estudiante" : rol 
-    };
-});
 
-console.log(asignarEstudiantes);
+// const edadesSumadas = simpsons.reduce((edades, simpson) => edades + simpson.edad, '');
+
+// const obtenerNombres = simpsons.map(simpson => simpson.nombre);
+
+// const asignarEstudiantes = simpsons.map(familia => {
+//     const {edad, rol} = familia;
+//     return {
+//         ...familia, //Spread para traerme todos los atributos de simpsons
+//         rol: edad < 18 & rol != "Perro" ? "Estudiante" : rol 
+//     };
+// });
+
+const masSimpsons =[
+{
+    nombre: 'Lenny',
+    edad: 48,
+    rol: 'Amigo amarillo de Homero'
+},
+{
+    nombre: 'Carl',
+    edad: 37,
+    rol: 'Amigo negro de Homero'
+},
+{
+    nombre: 'Ralph',
+    edad: 8,
+    rol: 'Amigo de Lisa'
+},
+{
+    nombre: 'Jefe Górgory',
+    edad: 35,
+    rol: 'Policia de Springfield'
+},
+];
+const listaCompletaDeSimpsons = [...simpsons, ...masSimpsons];
+console.log(listaCompletaDeSimpsons);
 
